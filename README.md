@@ -1,18 +1,38 @@
-# Salesforce DX Project: Next Steps
+## AI-Driven Test Drive Booking Experience
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project implements an AI-powered booking system using Agentforce to replace traditional, form-based test drive workflows.
 
-## How Do You Plan to Deploy Your Changes?
+### Overview
+The solution enables users to book test drives through a conversational interface available on both the website and WhatsApp, making the process faster and more intuitive.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+### Key Features
 
-## Configure Your Salesforce DX Project
+- Conversational Booking Interface  
+  Users interact with an AI agent instead of filling out long forms.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Customer Identification  
+  Detects whether the user is an existing or new customer.
 
-## Read All About It
+- Lead Creation with Email Verification  
+  New users are automatically created as leads in Automotive Cloud.  
+  Email verification prevents fake or invalid bookings.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Test Drive Scheduling  
+  Captures booking type (doorstep or dealership), vehicle model, preferred date and time, and zip code.
+
+- Automated Assignment  
+  Test drives are assigned to the appropriate dealership based on location.
+
+- Confirmation Workflow  
+  Sends a confirmation email with complete booking details.
+
+- WhatsApp Integration  
+  Enables users to book directly via WhatsApp with real-time updates.
+
+### Benefits
+
+- Eliminates manual follow-ups  
+- Improves data accuracy  
+- Reduces booking friction  
+- Increases conversion rates  
+- Enhances user engagement through omni-channel experience  
